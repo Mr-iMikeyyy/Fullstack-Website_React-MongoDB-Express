@@ -39,7 +39,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(session({
   name: 'session-id',
   secret: '12345-67890-09876-54321',
-  saveUninitialized: false;
+  saveUninitialized: false,
   resave: false,
   store: new FileStore()
 }));
